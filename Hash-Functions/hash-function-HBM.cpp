@@ -145,7 +145,7 @@ int main()
          << "\t\t\t\t\t\t\t\t\tHash Function Demonstration\n"
          << "\t\t\t\t\t\t\t\t\t\t M03.2: Hash Table\n"
          << string (100, '-') << endl
-         << "Welcome to the Hash Function Demonstration Program!\n\n";
+         << "Welcome to the Hash Function Demonstration Program!\n";
     
     // Declaration of Variables
     hashT hashTable;
@@ -200,7 +200,7 @@ int main()
                 
                 else
                 {
-                    cout << "\nElement at key " << key << " : ";
+                    cout << "\nElement at key #" << key << ": ";
                     cout << hashTable.Search(key) << endl;
                 }
                 
@@ -216,6 +216,9 @@ int main()
                 break;
                 
             case 4:
+                cout << "\nThank you for using the program... Goodbye!\n";
+                exit(0);
+                
                 break;
                 
             default:
